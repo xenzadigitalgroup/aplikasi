@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Home</title>
+  </head>
+  <style type="text/css" media="all">
+     body{
+    margin: 0;
+  }
+    .header{
+      width: 100%;
+      height: 80px;
+      background-color: #42A5F5;
+      position: fixed;
+      z-index: 9999;
+    }
+    .logo{
+      width: 50%;
+      height: 50px;
+      float: left;
+      padding-top: 20px;
+    }
+    .logo h1{
+      font-weight: bold;
+      color: white;
+    }
+    .cs_bantuan{
+      padding-top: 10px;
+      width:50%;
+      height: 50px;
+      float: left;
+      text-align: right;
+    }
+    .cs_bantuan img{
+      width: 30%;
+      height: auto;
+      float: left;
+      margin-left: 8%;
+      opacity: 0.7;
+    }
+    .cs_bantuan p{
+      float: left;
+      padding-left: 10%;
+      width: 60%;
+      font-size: 14px;
+      color: white;
+      opacity: 0.8;
+    }
+    .card_saldo{
+      width: 100%;
+    }
+    .card_bg{
+      width: 100%;
+      height: 120px;
+      background-color: #42A5F5;
+    }
+    .card_saldo{
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+    .bg_saldo{
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      box-shadow: 0px 2px 6px 1px rgba(66, 66, 66, 0.224);
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: -60px;
+    }
+    .box_saldo{
+      width: 50%;
+      height: auto;
+      float: left;
+    }
+    .box_saldo p{
+      font-weight: bold;
+      opacity: 0.5;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    .box_saldo h1{
+      font-weight: bold;
+      color: #42A5F5;
+      font-size: 20px;
+      margin-top: 0;
+    }
+    .box_topup{
+      width: 50%;
+      height: auto;
+      float: left;
+      text-align: right;
+      padding-right: 10px;
+    }
+    .box_topup a{
+      width: 50%;
+      height: auto;
+      float: left;
+      text-align: right;
+      padding-right: 10px;
+    }
+    .box_topup img{
+      width: 35px;
+      height: 35px;
+      box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.099);
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+    .box_topup p{
+      font-size: 13px;
+      margin-right: 6px;
+      opacity: 0.6;
+    }
+.bg_menu{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.box_menu{
+  width: 25%;
+  height: 120px;
+  padding-top: 5px;
+  float: left;
+  background-color: white;
+
+}
+.menu{
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.menu img{
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #00000000;
+  margin-bottom: 5px;
+}
+.menu p{
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.bg_text{
+  width: 20%;
+  height: 30px;
+  float: left;
+  padding: 10px;
+}
+.bg_text h4{
+  font-size: 18px;
+  font-weight: bold;
+}
+.marqu{
+  width: 80%;
+  height: 30px;
+  float: left;
+  padding: 5px;
+}
+.marqu marquee{
+  font-size: 18px;
+  opacity: 0.8;
+}
+.text_card{
+  border-bottom: 2px solid #f5f5f5;
+}
+ a{
+      text-decoration: none;
+      outline: none;
+      color: inherit;
+    }
+    a:hover{
+      text-decoration: none;
+      outline: none;
+      color: inherit;
+    }
+.img_banner{
+  width: 100%;
+  height: auto;
+}
+.img_banner img{
+  width: 48%;
+  margin-right: 1%;
+  margin-left: 1%;
+  height: 100px;
+  float: left;
+  margin-top: 10px;
+}
+.img_promo{
+  margin-top: 20px;
+  padding-top: 10px;
+}
+     .bgslide {  
+    width: 100%;  
+    overflow: hidden;   
+    overflow-x: hidden;   
+
+  }
+  .slider {  
+    display: flex;  
+    width: 100%;   
+    overflow-x: auto;   
+    scroll-snap-type: mandatory;   
+    scroll-behavior: smooth;   -webkit-overflow-scrolling: touch; }
+
+.slider::-webkit-scrollbar { width: 100%; margin-left: 0%; } .slider::-webkit-scrollbar-track { background: transparent; }
+   .img_slider{
+     width: 300px;
+     height: 150px;
+     margin-bottom: 10px;
+   } 
+   .img_slider img{
+     width: 290px;
+     height: 140px;
+     margin-top: 10px;
+     border-radius: 10px;
+     margin-right: 10px;
+     box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.150);
+   }
+  #img_slide{
+    margin-left: 20px;
+  }  
+.favorite-products {
+  margin-top: 0px;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.product {
+  display: inline-block;
+  width: 150px;
+  height: 70px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 2px 6px 1px rgba(66, 66, 66, 0.224);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product img {
+  width: 35%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: -35px;
+  text-align: right;
+}
+
+.product-description {
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover .product-text {
+  opacity: 1;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+  </style>
+  <body style="background-color:#f5f5f5">
+    
+       <!-- HEADER BAGIAN ATAS -->
+   <header class="header">
+     <div class="container">
+       <div class="logo">
+         <h1>NewXenza</h1>
+       </div>
+       <div class="cs_bantuan">
+         <p></p>
+         <img src="https://xenzadigitalgroup.github.io/academy.my.id/xz_tower-removebg-preview.png" alt="" />
+       </div>
+     </div>
+   </header>
+    <!-- END HEADER BAGIAN ATAS -->
+    
+   <!-- BACKGROUND KONTEN CARD SALDO-->
+ <div class="card_bg">
+  </div>
+  <!-- END BACKGROUND CARD SALDO -->
+  
+  <!-- CARD SALDO -->
+  <section class="card_saldo">
+    <div class="bg_saldo">
+      <div class="box_saldo">
+        <p>Saldo {{nama_user}}</p>
+        <h1 mt-3 class="namanya"id="saldo_user">Rp{{saldo_user}}</span></h1>
+        <a href="https://xenza.olshopku.com/digital/263306">
+          <p>>Cek mutasi saldo</p>
+        </a>
+    </div>
+    
+    <a href="https://xenza.site/akun/?page=topup">
+    <div class="box_topup">
+      <img src="https://static-00.iconduck.com/assets.00/empty-wallet-add-icon-256x250-fs6ihy8j.png" alt="" />
+      <p>Deposit</p>
+    </div>
+    </a>
+    
+    
+  </div>
+</section>
+
+<!-- MENU FITUR 1 -->
+<section class="bg_menu container">
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://png.pngtree.com/png-clipart/20230920/original/pngtree-company-stocks-rgb-color-icon-illustration-cash-achievement-vector-png-image_12630151.png" alt="" />
+      <p>Investasi</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://perbamida.bankjombang.co.id/deposito.png" alt="" />
+      <p>Deposito</p>
+    </div>
+  </div>
+  </a>
+  <a href="https://xenzadigitalgroup.github.io/inves/">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://cdn-icons-png.flaticon.com/256/5479/5479261.png" alt="" />
+      <p>Informasi Market</p>
+    </div>
+  </div>
+  </a>
+  <a href="https://xenzadigitalgroup.github.io/forum/">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-chat-2639493-2187526.png" alt="" />
+      <p>Forum</p>
+    </div>
+  </div>
+  </a>
+</section>
+<!-- END MENU FITUR 1 -->
+<di style="clear:both">
+  
+</div>
+
+<section class="text_card container">
+  <div class="bg_text">
+    <h4>INFO :</h4>
+  </div>
+  <div class="marqu">
+    <marquee>Maintenance rutin setiap hari jam 23:00-01:00 WIB</marquee>
+  </div>
+</section>
+
+
+<section class="text_card container">
+  <div class="bg_text">
+    <h6>Favorite</h6>
+  </div>
+</section>
+<section class="container favorite-products">
+  <a href="https://xenza.olshopku.com/produk/weeklypass-2346728" class="product">
+    <img src="https://play-lh.googleusercontent.com/DX-6kz2wCN7zNTOn-G4zTyb2BkZFRaqT1BAZT1kaX-J6ABWjHm4iVD9to9O1JZXf3e5k=s48-rw" alt="Product 1">
+    <div class="product-info">
+      <h6 class="product-title">-</h6>
+      <p class="product-description">Weekly Pass</p>
+    </div>
+  </a>
+
+  <a href="https://xenza.olshopku.com/produk/bnp-paribas-sri-kehati-2441687" class="product">
+    <img src="https://bibit.id/_next/static/media/MEES2.664818ba.svg" alt="Product 2">
+    <div class="product-info">
+      <h6 class="product-title">-</h6>
+      <p class="product-description">Paribas SRI-Kehati</p>
+    </div>
+  </a>
+
+  <a href="https://xenza.olshopku.com/produk/170-dm-2349480" class="product">
+    <img src="https://cdn.unipin.com/images/icon_product_pages/1658817763-icon-200x200_icon%20ff.jpg" alt="Product 2">
+    <div class="product-info">
+      <h6 class="product-title">-</h6>
+      <p class="product-description">190 💎</p>
+    </div>
+  </a>
+
+  <a href="https://xenza.olshopku.com/produk/20k-2346770" class="product">
+    <img src="https://play-lh.googleusercontent.com/pqoyI2JaPd3uOYt-5GzVqi82OvhBC9Jf-EPQqPDhCbyekdKZe5r-hOGlF4qE1ddWe3o=s48-rw" alt="Product 2">
+    <div class="product-info">
+      <h6 class="product-title">-</h6>
+      <p class="product-description">Dana 20K</p>
+    </div>
+  </a>
+  
+  <!-- Add more product cards here -->
+
+</section>
+
+<!-- MENU KONTEN 2 -->
+<section class="bg_menu container">
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://play-lh.googleusercontent.com/LDIQqtHoEJSolLWKohRfUMxWdzPY0Ojw6nVU6hb9HjpUFhxQlTe2KaLVFO5I3HKPd4Q" alt="" />
+      <p>Mobile Legend</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://cdn.unipin.com/images/icon_product_pages/1658817763-icon-200x200_icon%20ff.jpg" alt="" />
+      <p>Free Fire</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://play-lh.googleusercontent.com/3ohs9NzwVBY1Gvzo9xxayHenfpOkLWZ78DAfTu1YZNq1t1QCszDjy6OxjaUW-VRIUoE" alt="" />
+      <p>Pubg Mobile ID</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://cdn.unipin.com/images/icon_product_pages/1645066883-icon-WeChat%20Image_20220217093952.jpg" alt="" />
+      <p>Genshin Impact</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+    <div class="box_menu">
+      <div class="menu">
+        <img src="https://cdn.unipin.com/images/icon_product_pages/1710829444-icon-Oversea%20Icon-1024_11zon.png" alt="" />
+        <p>Honkai Star Rail</p>
+      </div>
+    </div>
+    </a>
+    <a href="#">
+      <div class="box_menu">
+        <div class="menu">
+          <img src="https://cdn.unipin.com/images/icon_product_pages/1633599388-icon-Icon_1024.jpg" alt="" />
+          <p>COD Mobile</p>
+        </div>
+      </div>
+      </a>
+      <a href="#">
+        <div class="box_menu">
+          <div class="menu">
+            <img src="https://cdn.unipin.com/images/icon_product_pages/1579505414-icon-lifeafter.jpg" alt="" />
+            <p>Life After</p>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+          <div class="box_menu">
+            <div class="menu">
+              <img src="https://cdn.unipin.com/images/icon_product_pages/1663645620-icon-1662619195-icon-1662082730-icon-Tower%20of%20Fantasy%20logo%20-%201%20jpg.jpg" alt="" />
+              <p>Tower of Fantasy</p>
+            </div>
+          </div>
+          </a>
+
+  <div style="clear:both;"></div>
+
+  <!-- MENU KONTEN 3 -->
+  <section class="bg_menu container"></section>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://play-lh.googleusercontent.com/pqoyI2JaPd3uOYt-5GzVqi82OvhBC9Jf-EPQqPDhCbyekdKZe5r-hOGlF4qE1ddWe3o=s48-rw" alt="" />
+      <p>Dana</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://play-lh.googleusercontent.com/-gl80k-nLhRwy_ovgo6o3ro2QX76sAJPpz7-azG-MXeLMaUSYtmZDT3GTM10wKqGMJSZ" alt="" />
+      <p>Gopay</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://pbs.twimg.com/media/EUbePLEU0AIpder.jpg" alt="" />
+      <p>Ovo</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+  <div class="box_menu">
+    <div class="menu">
+      <img src="https://25174313.fs1.hubspotusercontent-eu1.net/hub/25174313/hubfs/279562802_659176625392175_8530308473468348344_n.jpg?width=2048&height=2048&name=279562802_659176625392175_8530308473468348344_n.jpg" alt="" />
+      <p>ShopeePay</p>
+    </div>
+  </div>
+  </a>
+  <a href="#">
+    <div class="box_menu">
+      <div class="menu">
+        <img src="https://play-lh.googleusercontent.com/yHAWkzRY9fsbTWyMqJzojIqz1LHGD7FKvbInWus1E36oujcieWEQCrd8tlp9iO3t647_=w240-h480-rw" alt="" />
+        <p>Doku</p>
+      </div>
+    </div>
+    <a>
+      <div class="box_menu">
+        <div class="menu">
+        </div>
+      </div>
+      <a>
+        <div class="box_menu">
+          <div class="menu">
+          </div>
+        </div>
+        <a>
+          <div class="box_menu">
+            <div class="menu">
+            </div>
+          </div>
+
+  <div style="clear:both;"></div>
+
+  <!-- MENU KONTEN 4 -->
+  <section class="bg_menu container"></section>
+  <a href="#">
+    <div class="box_menu">
+      <div class="menu">
+        <img src="https://play-lh.googleusercontent.com/DBzJQ2z8p3n_YPQkmbc6luCfO3OhafRkOZimMoXFXBMoUokLu6RPDRgVM86U_QkRVNE=w240-h480-rw" alt="" />
+        <p>Telkomsel</p>
+      </div>
+    </div>
+    </a>
+    <a href="#">
+    <div class="box_menu">
+      <div class="menu">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ5JRKKLOBajJBVwSDwINSucv5jMHO5bgmscruOBUdow&s" alt="" />
+        <p>Xl & Axis</p>
+      </div>
+    </div>
+    </a>
+    <a href="#">
+    <div class="box_menu">
+      <div class="menu">
+        <img src="https://i.postimg.cc/mkMxPG0b/20220702-193714.jpg" alt="" />
+        <p>3</p>
+      </div>
+    </div>
+    </a>
+    <a href="#">
+    <div class="box_menu">
+      <div class="menu">
+        <img src="https://i.postimg.cc/mkMxPG0b/20220702-193714.jpg" alt="" />
+        <p>Indosat</p>
+      </div>
+    </div>
+    </a>
+</section>
+<!-- END MENU KONTEN 4 -->
+<div style="clear:both;">
+  
+</div>
+<br /> <br />
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+<!-- Navigation Buttons -->
+<nav class="fixed-bottom bg-light p-2 border-top">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col text-center">
+        <a href="#" class="d-block">
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/846/846449.png" alt="Home" class="nav-icon" width="24" height="24">
+          </div>
+          <div>Home</div>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="#" class="d-block">
+          <div>
+            <img src="data:image/png;base64,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" alt="Riwayat" class="nav-icon" width="24" height="24">
+          </div>
+          <div>Transaksi</div>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="#" class="d-block">
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/32/32223.png" alt="Mutasi" class="nav-icon" width="24" height="24">
+          </div>
+          <div>Mutasi</div>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="#" class="d-block">
+          <div>
+            <img src="https://cdn-icons-png.freepik.com/256/552/552848.png?semt=ais_hybrid" alt="Profile" class="nav-icon" width="24" height="24">
+          </div>
+          <div>Profile</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Navigation Buttons -->
+
+<script>
+  // Fungsi untuk format angka dengan tanda pemisah "."
+  function formatNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
+  // Mendapatkan elemen dengan ID saldo_user
+  var saldoUserElement = document.getElementById("saldo_user");
+
+  // Memeriksa apakah elemen saldo_user ditemukan
+  if (saldoUserElement) {
+    // Mengambil nilai saldo dari elemen
+    var saldo = saldoUserElement.textContent;
+
+    // Format angka dengan tanda pemisah "."
+    var saldoFormatted = formatNumber(saldo);
+
+    // Memasukkan saldo yang sudah diformat kembali ke elemen
+    saldoUserElement.textContent = saldoFormatted;
+  }
+  // Menampilkan pop-up welcome setelah halaman dimuat
+  var welcomePopup = document.getElementById('welcomePopup');
+  if (welcomePopup) {
+    welcomePopup.style.display = 'block';
+
+    // Menjalankan animasi pop-up
+    setTimeout(function() {
+      welcomePopup.style.bottom = '300px'; // Atur posisi akhir sesuai keinginan
+    }, 100);
+
+    // Menyembunyikan pop-up setelah 5 detik
+    setTimeout(function() {
+      welcomePopup.style.bottom = '-100%';
+    }, 3000);
+  }
+</script> 
+  </body>
+</html>
